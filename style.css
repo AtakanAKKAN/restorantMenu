@@ -46,24 +46,34 @@ body{
 
 .list{
     width: calc(100%);
-    background-color:black;
-    margin: 10px;
+    background-color:rgba(0, 0, 0, 0.215);
+    margin: 10px 0;
 }
 
 
 .listbuttoncss{
     text-align: center;
-    padding: 4px 10px;
+    padding: 4px 8px;
     margin: 2px 0;
-    border-bottom: 2px solid black;
+    border-bottom: 2px dotted #030000;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.listbuttoncss i{
+    font-size: 2.5vw;
+}
+
+
 
 .listcss{
     font-size: 2.5vw;
     color: var(--list-name-color);
     background-color: transparent;
     border: 1px solid transparent;
-    padding: 1% 15%;
+    padding: 1% 4%;
 }
 
 .flashcontrolbutton{
@@ -113,6 +123,10 @@ body{
     max-width: 80%;
 }
 
+.favorite::after{
+    content: "🌟";
+}
+
 /*.content span{
     height: 1px;
     width: 200px;
@@ -149,6 +163,10 @@ body{
         background-color: transparent;
         border: 1px solid transparent;
         padding: 1% 15%;
+    }
+
+    .listbuttoncss i{
+        font-size: 6vw;
     }
 
     .content p{
