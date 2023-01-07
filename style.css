@@ -162,7 +162,7 @@ body{
         color: var(--list-name-color);
         background-color: transparent;
         border: 1px solid transparent;
-        padding: 1% 15%;
+        padding: 1% 3%;
     }
 
     .listbuttoncss i{
